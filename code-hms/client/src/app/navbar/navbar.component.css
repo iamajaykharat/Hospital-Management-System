@@ -1,0 +1,16 @@
+
+.probootstrap-navbar-dark {
+    background: #32609e !important;
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}

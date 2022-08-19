@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="searchdoc">
+  <form class="form-inline mt-4">
+    <div class="mb-2">
+      <label class="ff" for="doctor">Select Doctor</label>
+      <select class="form-control" [(ngModel)]="doc.name" name="name">
+        <option [value]="docs.name" *ngFor="let docs of doctor">{{docs.name}}</option>
+      </select>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <button class="btn btn-dark my-3" type="submit" (click)="showDoctorDetails()"><i
+          class="fa fa-search"></i> search</button>
+    </div>
+  </form>
+</div>
+<!--  -->
+
+<div class="container mt-5 d-flex justify-content-center">
+
+  <div class="card p-3">
+
+      <div class="d-flex align-items-center">
+
+          <div class="image">
+      <img src="../assets/img/doctors/doctor-img.jpg" class="rounded m-1" width="170" height="175" >
+      <h6 class="text-center pt-1 cd">Doctor</h6>
+      </div>
+
+      <div class="ml-3 w-100">
+          
+         <h5 class="mm cd">{{doc.name}}</h5>
+         <span class="mm cdd">{{doc.field}}
+        </span>
+
+         <div class="p-2 mt-3 mx-2 bg-primary d-flex justify-content-between rounded text-white stats">
+
+          <div class="d-flex flex-column">
+
+              <span class="articles">Patient Examined</span>
+              <span class="number1">38</span>
+              
+          </div>
+
+             
+         </div>
+
+
+         <div class="button mt-2 d-flex flex-row align-items-center">
+
+          <button class="btn btn-sm btn-outline-primary w-100">Chat</button>
+          <button class="btn btn-sm btn-primary w-100 ml-2">Follow</button>
+
+             
+         </div>
+
+
+      </div>
+
+          
+      </div>
+      
+  </div>
+   
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>

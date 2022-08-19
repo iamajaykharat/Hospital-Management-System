@@ -1,0 +1,16 @@
+
+.container{
+    height: auto;
+    background-image: linear-gradient(to right, rgb(172, 216, 247) , rgb(12, 54, 137));
+}
+
+.formbg{
+    height: auto;
+    background-color: rgba(14, 27, 129, 0.3);
+}
+
+.ff{
+    font-size: 15px;
+    color: white;
+    font-style: italic;
+}

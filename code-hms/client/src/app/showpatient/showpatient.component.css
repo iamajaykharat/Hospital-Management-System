@@ -1,0 +1,30 @@
+.container{
+    margin-top: 50px;
+    background-image: linear-gradient(to right, rgb(172, 216, 247) , rgb(12, 54, 137));
+}
+.searchdoc{
+    padding: 20px;
+    width: 50%;
+    margin:0 auto;
+    background-color: rgba(14, 27, 129, 0.3);
+}
+.ch{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(14, 27, 129, 0.8);
+}
+.ff{
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.ct{
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}

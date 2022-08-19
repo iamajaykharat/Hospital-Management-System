@@ -1,0 +1,41 @@
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 m-auto p-5 formbg">
+        <form >
+          <div class="mb-2">
+            <div class="col">
+              <div class="h3 fw-bold text-light text-center my-4">Add Doctor 
+              </div>
+            </div>
+            <label class="ff" for="">Name</label>
+            <input name="name" [(ngModel)]="doctor.name" name="name" [value]="doctor.name" required="true" type="text" class="form-control" placeholder="Doctor name">
+          </div>
+          <div class="mb-2">
+            <label class="ff" for="">Specialization</label>
+            <input name="field" [(ngModel)]="doctor.field" name="field" [value]="doctor.field" required="true" type="text" class="form-control" placeholder="Enter Field">
+          </div>
+          <div class="mb-2">
+            <label class="ff" for="">Age</label>
+            <input name="age" [(ngModel)]="doctor.age" name="age" [value]="doctor.age" required="true" type="number" class="form-control" placeholder="Enter age">
+          </div>
+          <div class="mb-2">
+            <label class="ff" for="gender">Choose Gender</label>
+            <select id="gender"[(ngModel)]="doctor.gender" [value]="doctor.gender" class="form-control" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+          <div class="mb-2 mt-4 text-center">
+            <button type="submit" (click)="saveDoctor()" class="btn btn-dark">ADD</button>
+            <a routerLink="/" class="btn btn-light ms-2">CANCLE</a>
+          </div>
+
+        </form>
+      </div>
+     
+    </div>
+  </div>
+
+<!-- <pre>{{doctor | json}}</pre> -->
